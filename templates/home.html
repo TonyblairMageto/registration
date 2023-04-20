@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<h1>Welcome to the Home Page</h1>
+{{ member.firstname }} {{ member.lastname }}
+
+<a href="{% url 'login' %}" class="btn btn-success">Logout</a>
+
+</body>
+</html>
